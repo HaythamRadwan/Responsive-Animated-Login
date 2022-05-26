@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-wave{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -55;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25rem;
+    padding: 0 2rem;
+}
+
+.phone{
+    width: 500px;
+    height: 720px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.phone .phone-img {
+    width: 90%;
+    height: 90%;
+}
+
+.data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    height: 800px;
+}
+
+.data form {
+    width: 360px;
+}
+
+.data form .avatar {
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.data form .welcome-msg {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.data .user-name {
+    
+}
+.data .user-pass {
+    
+} 
+
+.data .user-name input {
+    /*position: relative;*/
+    width: 260px;
+    height: 25px;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom-color: rgb(229,229,229);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.data .user-pass input {
+    /*position: relative;*/
+    width: 260px;
+    height: 25px;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom-color: rgb(229,229,229);
+    padding-left: 10px;
+    outline: none;
+}
+
+/**********************************************************************/
+
+.data .label {
+    color: rgb(184,184,184);
+    position: relative;
+    bottom: -10px;
+    transition: .5s;
+}
+
+.data i {
+    color: rgb(219,219,219);
+    position: relative;
+    bottom: -10px;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+/******************************************************/
+
+             /* Forget Password? */
+
+.data .div-forget {
+    /*float: right;*/
+    /*margin-top: 15px;*/
+    /*font-size: 15px;*/
+    /*margin-bottom: 20px;*/
+}
+
+.data .forget {
+    float: right;
+    color: rgb(219,219,219);
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.forget:hover {
+    color: #38d39f;
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+        /*reForget*/
+
+.reForget {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 3px 0;
+    padding: 1px;
+    background-color: #9fcbaa;
+    float: right;
+    display: none;
+    transition: 0.3s;
+}
+
+.reForget .re {
+    float: right;
+    margin-right: 3px;
+}
+
+.reForget .re:first-child {
+    margin-top: 5px;
+}
+.reForget .re:last-child {
+    margin-bottom: 5px;
+}
+
+.reForget .reLabel {
+    position: relative;
+    font-size: 10px;
+    margin-left: 2px;
+}
+.reForget .reLabel:nth-child(3) {
+    bottom: -15px;
+}
+.reForget .reLabel:last-of-type {
+    bottom: -15px;
+}
+
+          /* End Forget Password? */
+          
+/*****************************************************************/
+          
+          /* btn Log in */
+
+.data .bt-login {
+    display: block;
+    width: 260px;
+    height: 35px;
+    background-color: rgb(33,156,128);
+    /*background-image: linear-gradient (to right, #32be8f, #38d39f, #32be8f);*/
+    /*background-size: 200%;*/
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.bt-login:hover {
+    background-color: rgba(33,156,128,0.5);
+    /*background-position: right;*/
+    color: #ff5722;
+    transform: scale(1.1);
+}
+
+            /* End btn Log in */
